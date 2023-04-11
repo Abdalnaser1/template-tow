@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfloe3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/dufolt.css"> -->
+    <!-- <link rel="stylesheet" href="css/dark.css"> -->
+</head>
+<body>
+    <!-- Start Nav -->
+    <nav>
+        <!-- <button value="dufolt">dufilt</button>
+        <button value="dark">dark</button> -->
+        <div class="container">
+        <div class="logo">
+            <h1>logo</h1>
+        </div>
+        <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+         </div>
+       </div>
+    </nav>
+     <!-- End Nav -->
+
+     <!-- Start Header -->
+     <header>
+        <img src="" alt="">
+        <div class="title">
+            <h2>Agency</h2>
+            <p>Sample text. Click to select the text box. Click again or<br>double click to start editing the text.</p>
+        </div>
+     </header>
+     <!-- End Header -->
+
+     <!-- Start About us -->
+     <section class="About-us">
+        <div class="container">
+            <h2>ABOUT US</h2>
+            <p>We are a Web Design Agency</p>
+            <div class="box-Abuot">
+              <div class="box">
+                <img src="imges/1.png" alt="">
+                <h3>Cloud Solution</h3>
+                <button>more</button>
+              </div>
+            
+              <div class="box">
+                <img src="imges/2.png" alt="">
+                <h3>Speed Optimization</h3>
+                <button>more</button>
+              </div>
+              <div class="box">
+                <img src="imges/3.png" alt="">
+                <h3>Online Marketing</h3>
+                <button>more</button>
+               </div>
+                <div class="box">
+                <img src="imges/4.png" alt="">
+                <h3>Website Design</h3>
+                <button>more</button>
+            </div>
+        </div>
+        </div>
+     </section>
+     <!-- End About us -->
+
+     <!-- Start Capabilities -->
+     <section class="Capabilities">
+        <div class="container">
+            <h2>Capabilities</h2>
+            <div class="box-flexcap">
+            <div class="box-capa">
+                <img src="imges/cap1.jpg" alt="">
+                <p>BRAND STRATEGY</p>
+                <ul>
+                    <li>Brand equity audit</li>
+                    <li>Audience analysis</li>
+                    <li>Competitive review</li>
+                    <li>Strategic direction</li>
+                </ul>
+            </div>
+            <div class="box-capa">
+                <img src="imges/cap1.jpg" alt="">
+                <p>BRAND IDENTITY</p>
+                <ul>
+                    <li>Brand equity audit</li>
+                    <li>Audience analysis</li>
+                    <li>Competitive review</li>
+                    <li>Strategic direction</li>
+                </ul>
+            </div>
+            <div class="box-capa">
+                <img src="imges/cap1.jpg" alt="">
+                <p>COMMUNICATION</p>
+                <ul>
+                    <li>Brand equity audit</li>
+                    <li>Audience analysis</li>
+                    <li>Competitive review</li>
+                    <li>Strategic direction</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+     </section>
+       <div class="container">
+        <div class="up">
+            <button id="scrollup">Up</button>
+        </div>
+       </div>
+     <!-- End Capabilities -->
+     <footer>
+        <h3>By Abdalnser 2023</h3>
+     </footer>
+
+     <script src="js/jquery-3.6.4.min.js"></script>
+     <!-- <script src="js/main.js"></script> -->
+     <script>
+        $(document).ready(function(){
+            var butt =$("#scrollup")
+            $(window).scroll(function(){
+                console.log($(this).scrollTop())
+              if ($(this).scrollTop() >= 488){
+                butt.show()
+
+              } 
+              else {
+                butt.hide()
+              } 
+            })
+            butt.click(function(){
+                $("html,body").animate({scrollTop :0 },500)
+            })
+        })
+
+     </script>
+</body>
+</html>

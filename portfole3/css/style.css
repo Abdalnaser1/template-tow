@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* height: 6000px; */
+}
+a {
+    text-decoration: none;
+}
+/* ul {
+    list-style: none;
+} */
+.container {
+    width: 80%;
+    margin: auto;
+}
+section {
+    padding: 50px 0;
+}
+/* Start Nav */
+nav {
+    background-color: white;
+    padding: 15px 0;
+    height: 70px;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo h1 {
+  text-transform: capitalize;
+}
+nav .menu:hover {
+    cursor: pointer;
+}
+nav .menu span {
+    width: 48px;
+    height: 4px;
+    margin: 4px;
+    background-color: black;
+    display: block;
+    /* cursor: pointer; */
+}
+/* End Nav */
+/* Start Header */
+header {
+    width: 100%;
+    height:calc(100vh - 70px);
+    background: url(../imges/bgh.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header .title {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+header .title h2 {
+    color:white;
+    font-size: 75px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+header .title p {
+    color:#342e2e;
+}
+/* End Header */
+
+/* Start About us */
+.About-us {
+    background-color: #2783ca;
+    text-align: center;
+    /* padding: 50px 0; */
+}
+.About-us h2 {
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.About-us p {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.box-Abuot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-Abuot .box {
+    margin:0  10px 10px 0;
+    /* border: 1px solid red; */
+    background-color: white;
+    min-width: 250px;
+    border-radius: 10px;
+}
+.box-Abuot .box img {
+    width: 60%;
+    padding: 24px;
+}
+.box-Abuot .box h3 {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+.box-Abuot .box button {
+    all: unset;
+    border-bottom: 1px solid black;
+    padding: 10px 0 5px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.box-Abuot .box button:hover {
+    color: #2783ca;
+}
+/* End About us */
+
+/* Start Capabilities */
+.Capabilities {
+    background-color: #dcc3c9;
+    color:black;
+    
+}
+.Capabilities h2 {
+    color: black;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box-flexcap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+.box-flexcap .box-capa {
+    margin:0  10px 10px 0;
+    max-width: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+.box-flexcap .box-capa img {
+    width: 100%;
+}
+.box-flexcap .box-capa p {
+    color: #2783ca;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.box-flexcap .box-capa ul {
+    margin: 34px;
+}
+.box-flexcap .box-capa ul li{
+    margin-bottom: 10px;
+    padding: 0 10px;
+
+}
+/* End Capabilities */
+
+#scrollup {
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+    background-color: #332f2f;
+    transition: 0.3s;
+    outline: 0;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+footer {
+    background-color: black;
+    color: #2783ca;
+    text-align: center;
+    padding: 100px 0;
+}
